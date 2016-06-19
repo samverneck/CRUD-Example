@@ -1,0 +1,17 @@
+<h2>Cadastro de usuário User-CRUD</h2>
+
+<form name="UserCreate.userCreateForm" data-ng-submit="UserCreate.submitForm(UserCreate.form)">
+
+  <div data-ng-class="{'invalid': UserCreate.form.name.$invalid && !UserCreate.form.name.$pristine, 'dirty': UserCreate.form.name.$dirty}">
+    <input type="text" name="name" data-ng-model="UserCreate.form.name" placeholder="NAME" required>
+  </div>
+
+  <div data-ng-class="{'invalid': UserCreate.form.email.$invalid && !UserCreate.form.name.$pristine}">
+    <input type="email" name="email" data-ng-model="UserCreate.form.email" placeholder="EMAIL">
+  </div>
+
+  <button data-ng-disabled="UserCreate.editing || UserCreate.form.name.$pristine" class="btn btn-large green waves-effect waves-light col s12" type="submit" name="action">
+    CREATE
+  </button>
+
+</form>

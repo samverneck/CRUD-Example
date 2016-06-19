@@ -1,0 +1,16 @@
+<h2>Editar usuário User-CRUD<h2>
+
+  <form name="UserEdit.userUpdateForm">
+    <div data-ng-class="{'invalid': UserEdit.form.name.$invalid && !UserEdit.form.name.$pristine, 'dirty': UserEdit.form.name.$dirty}">
+      <input type="text" name="name" data-ng-model="UserEdit.form.name" placeholder="NAME" required>
+    </div>
+
+    <div data-ng-class="{'invalid': UserEdit.form.email.$invalid && !UserEdit.form.name.$pristine}">
+      <input type="email" name="email" data-ng-model="UserEdit.form.email" placeholder="EMAIL">
+    </div>
+
+    <button ng-click='UserEdit.updateForm(UserEdit.form)' class="btn btn-large orange waves-effect waves-light col s12" type="submit" name="action">
+      SAVE
+    </button>
+
+  </form>
