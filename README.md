@@ -11,4 +11,4 @@ _OBS:_ If you dont have nodemon (se não possui nodemon):
 _Use:_ <br/>
 1. http-server <br/> <br/>
 _OBS:_ If you dont have http-server (se não possui http-server):
-* npm install http-server-g
+* npm install http-server -g
