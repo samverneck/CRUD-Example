@@ -38,7 +38,7 @@ angular.module('User', [])
 function UserService($http) {
     let vm = this;
     const userRotaAPI = 'users/';
-    const url = 'http://localhost:3000/api/' + userRotaAPI;
+    const url = 'http://localhost:3033/api/' + userRotaAPI;
 
 
     vm.list = function() {
@@ -91,7 +91,7 @@ function UserService($http) {
     }
 
     // vm.update = function(user) {
-    //   const url = 'http://localhost:3000/api/' + userRotaAPI + user._id;
+    //   const url = 'http://localhost:3033/api/' + userRotaAPI + user._id;
     //   const method = 'PUT';
     //   delete user._id;
     //   //console.log('user: ', user);
